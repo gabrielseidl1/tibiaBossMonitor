@@ -15,9 +15,12 @@ function toggleSidebar()
         content.style.filter = 'blur(2px)'; 
         }
         else {
-        navigationHeader.style.marginLeft= '-100vw'; /*abrir e fechar*/
-        navigationHeader.style.animationName = ''; /*Animacao de abrir e fechar*/
-        content.style.filter = ''; /*Tirar o borrado do content*/
+            //abrir e fechar
+            navigationHeader.style.marginLeft= '-100vw'; 
+            //Animacao de abrir e fechar*/
+            navigationHeader.style.animationName = ''; 
+            //Tirar o borrado do content
+            content.style.filter = ''; 
     }
 }
 
