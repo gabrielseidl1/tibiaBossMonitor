@@ -7,9 +7,12 @@ function toggleSidebar()
 {
     showSidebar = !showSidebar;
     if(showSidebar){
-        navigationHeader.style.marginLeft= '-10vw'; /*abrir e fechar*/
-        navigationHeader.style.animationName = 'showSidebar'; /*Animacao de abrir e fechar*/
-        content.style.filter = 'blur(2px)'; /*Deixar borrado o content*/
+        /*abrir e fechar*/
+        navigationHeader.style.marginLeft= '-10vw'; 
+        /*Animacao de abrir e fechar*/
+        navigationHeader.style.animationName = 'showSidebar'; 
+        /*Deixar borrado o content*/
+        content.style.filter = 'blur(2px)'; 
         }
         else {
         navigationHeader.style.marginLeft= '-100vw'; /*abrir e fechar*/
