@@ -24,7 +24,8 @@ function toggleSidebar()
     }
 }
 
-function closeSidebar(){ /*Funcao para fechar o sidebar clicando no content*/
+/*Funcao para fechar o sidebar clicando no content*/
+function closeSidebar(){
     if(showSidebar){
         toggleSidebar();
     }
