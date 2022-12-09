@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <div class="header" id="header">
+    <header class="header" id="header">
       <button onclick="toggleSidebar()" class="btn_icon_header">
         <!--3 riscos do menu-->
         <svg
@@ -53,11 +53,16 @@
         <a href="#" class="btn">Search</a>
         <a href="#" class="btn">Login</a>
       </div>
-    </div>
+    </header>
+    <!--Como é uma div nao da pra por somente o onclick, preciso adicionar o tabindex-->
     <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
       <h1>Bem-Vindo ao Tibia Boss Monitor</h1>
     </div>
-    <!--Como é uma div nao da pra por somente o onclick, preciso adicionar o tabindex-->
+    <footer>
+      <div class="roda_pe">
+        <h1>© 2022 Tiba Boss Monitor. Todos os direitos reservados.</h1>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
