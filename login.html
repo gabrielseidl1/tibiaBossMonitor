@@ -1,0 +1,48 @@
+<div id="loginContent">
+  <script>
+    function logout() {
+      client.auth.signOut().then(() => {
+        location.reload();
+      });
+    }
+
+    function login() {
+      client.auth
+        .signInWithPassword({
+          email: document.getElementById("username").value,
+          password: document.getElementById("password").value,
+        })
+        .then(({ data, error }) => {
+          location.reload();
+        });
+    }
+  </script>
+  <div>
+    <h1>Login</h1>
+    <div>
+      <label>Username:</label>
+      <input placeholder="Your username" type="text" id="username" />
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" id="password" />
+    </div>
+  </div>
+  <div><button onclick="login()">Login</button></div>
+</div>
+
+<script>
+  const client = supabase.createClient(
+    "https://wytqvoeosivrjgfluofh.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5dHF2b2Vvc2l2cmpnZmx1b2ZoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzExMzI3NDgsImV4cCI6MTk4NjcwODc0OH0.n_V1dF7QuHqYkY0ZJh_9cTJZ6RrfApMeK8wMwCMItTA"
+  );
+
+  client.auth.getUser().then((response) => {
+    if (response.data.user) {
+      document.getElementById("loginContent").innerHTML = `
+        <h1>${response.data.user.email} logado</h1>
+        <button onclick="logout();">Logout</button>
+      `;
+    }
+  });
+</script>

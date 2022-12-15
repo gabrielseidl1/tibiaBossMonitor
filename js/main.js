@@ -12,7 +12,7 @@ function toggleSidebar()
         /*Animacao de abrir e fechar*/
         navigationHeader.style.animationName = 'showSidebar'; 
         /*Deixar borrado o content*/
-        content.style.filter = 'blur(2px)'; 
+        contentDiv.style.filter = 'blur(2px)'; 
         }
         else {
             //abrir e fechar
@@ -20,7 +20,7 @@ function toggleSidebar()
             //Animacao de abrir e fechar*/
             navigationHeader.style.animationName = ''; 
             //Tirar o borrado do content
-            content.style.filter = ''; 
+            contentDiv.style.filter = ''; 
     }
 }
 
