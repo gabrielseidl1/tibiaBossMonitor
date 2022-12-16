@@ -1,16 +1,30 @@
-<div>
-  <h1>Sign up</h1>
+<div class="signup_box">
   <div>
-    <label>Username:</label>
-    <input placeholder="Your username" type="text" id="username" />
+    <h1>Sign up</h1>
+    <div class="username_signup">
+      <label>Username:</label>
+      <input
+        placeholder="Your username"
+        type="text"
+        style="text-align: center"
+        id="username"
+      />
+    </div>
+    <br />
+    <div class="password_signup">
+      <label>Password:</label>
+      <input
+        placeholder="Your password"
+        type="password"
+        style="text-align: center"
+        id="password"
+      />
+    </div>
+    <br />
   </div>
-  <div>
-    <label>Password:</label>
-    <input type="password" id="password" />
-  </div>
+  <div><button class="signup_btn" onclick="signup()">Sign up</button></div>
 </div>
-<div><button onclick="signup()">Sign up</button></div>
-<footer include-html="footer.html"></footer>
+<!-- <footer include-html="footer.html"></footer> Estava sobrando-->
 <script src="js/main.js"></script>
 <script src="js/include.js"></script>
 <script>
