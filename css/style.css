@@ -141,3 +141,36 @@ body {
     padding-top: 14px;
 }
 
+.signup_box {
+    background-color: rgb(57, 57, 57);
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.signup_btn{
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgb(85, 0, 0);
+    background-color: var(--color-red);
+    color: white;
+    border-radius: 8px;
+}
+
+.signin_box {
+    background-color: rgb(57, 57, 57);
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.signin_btn{
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgb(85, 0, 0);
+    background-color: var(--color-red);
+    color: white;
+    border-radius: 8px;
+}
